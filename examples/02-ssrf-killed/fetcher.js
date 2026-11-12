@@ -47,7 +47,7 @@ module.exports = { ssrfGuard };
 const express = require("express");
 const router = express.Router();
 
-router.post("/api/preview", async (req, res) => {
+router.post("/api/preview", ssrfGuard, async (req, res) => {
   const resp = await fetch(req.body.url, { redirect: "manual", timeout: 5000 });
   const html = await resp.text();
   const title = /<title>([^<]*)<\/title>/.exec(html);

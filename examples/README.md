@@ -2,9 +2,9 @@
 
 Three findings, run through both skills in this pack. The code in each folder is small, self-contained, and written for this repository; it is not taken from any real project.
 
-Each example has the same three files:
+Each example has the same parts:
 
-- The code the audit read.
+- The code the audit read. Example 03's code spans two files: `invoices.py`, the handlers, and `db.py`, the data layer the disproof pass checked for an ownership check.
 - `FINDING.md`, the first pass, written by the diff-security-audit skill in its own format.
 - `DISPROOF.md`, the second pass, written by the adversarial-disproof skill after trying to kill the finding.
 
