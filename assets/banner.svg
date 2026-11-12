@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="Terminal session: an agent audits its own diff, then a second pass kills one finding and confirms two">
+  <rect width="1280" height="360" rx="12" fill="#0d1117"/>
+  <rect width="1280" height="44" rx="12" fill="#161b22"/>
+  <rect y="22" width="1280" height="22" fill="#161b22"/>
+  <circle cx="28" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="54" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="80" cy="22" r="7" fill="#27c93f"/>
+  <text x="110" y="29" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="15" fill="#8b949e">agent session: pre-PR security pass</text>
+  <text font-family="ui-monospace, Menlo, Consolas, monospace" font-size="21">
+    <tspan x="36" y="102" fill="#7ee787">$ agent, audit this diff before I open the PR</tspan>
+    <tspan x="36" y="146" fill="#c9d1d9">pass 1  diff-security-audit ..... 3 findings (SQLi, SSRF, IDOR)</tspan>
+    <tspan x="36" y="190" fill="#c9d1d9">pass 2  adversarial-disproof .... now trying to prove all 3 wrong</tspan>
+    <tspan x="36" y="234" fill="#ffa657">SSRF ... KILLED: allowlist guard found in middleware</tspan>
+    <tspan x="36" y="278" fill="#7ee787">SQLi ... CONFIRMED    IDOR ... CONFIRMED, restated precisely</tspan>
+    <tspan x="36" y="322" fill="#8b949e">2 findings worth a human's time. 1 false positive buried quietly.</tspan>
+  </text>
+</svg>
