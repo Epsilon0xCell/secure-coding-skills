@@ -1,5 +1,7 @@
 # secure-coding-skills
 
+[![Release](https://img.shields.io/github/v/release/Epsilon0xCell/secure-coding-skills)](https://github.com/Epsilon0xCell/secure-coding-skills/releases) [![License](https://img.shields.io/github/license/Epsilon0xCell/secure-coding-skills)](LICENSE) [![Stars](https://img.shields.io/github/stars/Epsilon0xCell/secure-coding-skills)](https://github.com/Epsilon0xCell/secure-coding-skills/stargazers)
+
 ![An agent audits its own diff, then a second pass kills one finding and confirms two](assets/banner.svg)
 
 **Your coding agent wrote the diff. These skills make it tear its own findings apart before the PR.**
@@ -19,6 +21,15 @@ That copies both skills into `~/.claude/skills`. Set `SKILLS_DIR` to install som
 Then, before a pull request:
 
 > Run diff-security-audit on my changes against main. Then run adversarial-disproof on whatever it finds. Show me only what survives.
+
+## Contents
+
+- [Install](#install)
+- [What is in the pack](#what-is-in-the-pack)
+- [Why two passes](#why-two-passes)
+- [Honest limits](#honest-limits)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## What is in the pack
 
